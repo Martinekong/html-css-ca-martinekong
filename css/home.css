@@ -1,4 +1,10 @@
-.banner {}
+.banner {
+  background-image: url(/assets/images/banner-image.jpg);
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
 
 .sale {}
 

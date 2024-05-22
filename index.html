@@ -14,25 +14,36 @@
 
   <body>
     <header>
-      <img src="#" alt="Rainydays logo"> <!--the rainydays logo-->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="about-us.html">About</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
-      <button>Search</button>
-      <img src="#" alt="heart icon for favourites">
-      <img src="#" alt="basket icon for shopping cart">
+      <section>
+        <img src="assets/icons/rainydays-logo-cropped.png" alt="Rainydays logo">
+      </section>
+
+      <section>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </nav>  
+      </section>
+
+      <section class="search">
+        <input type="text" class="search-field">
+        <img src="assets/icons/search-icon.png" class="search-icon">
+      </section>
+
+      <section>
+        <img src="assets/icons/heart-icon-white.png" alt="heart icon for favourites" class="header-icons">
+        <img src="assets/icons/basket-icon-white.png" alt="basket icon for shopping cart" class="header-icons">  
+      </section>
     </header>
 
 
     <main>
 
       <section class="banner">
-        <img src="#" alt="banner image"> <!--should be a background image in CSS-->
         <p>Weatherproof your adventures</p>
         <p>Conquer the elements</p>
         <button><a href="shop.html">Go to shop</a></button>

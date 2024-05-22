@@ -1,0 +1,61 @@
+header {
+  background-color: rgb(46, 72, 107);
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+
+  font-family: helvetica neue, arial;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+header li {
+  display: inline;
+  padding-right: 60px;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+header a:hover {
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.search {
+  position: relative;
+}
+
+.search-field {
+  height: 30px;
+  width: 300px;
+  border-radius: 6px;
+  border: none;
+  padding-left: 20px;
+  font-family: helvetica neue;
+  font-size: 16px;
+}
+
+.search img {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  height: 20px;
+}
+
+.header-icons {
+  padding-left: 40px;
+  height: 26px;
+}
+
+/*HAVE TO ADD MEDIA QUERIES - it is now coded for full screen desktop*/
