@@ -7,6 +7,8 @@
   display: flex;
   flex-direction: column;
   padding-left: 40px;
+  padding-bottom: 20px;
+  justify-content: flex-end;
 }
 
 /* How do I get the background image to have no space up to the header ?? */
@@ -28,6 +30,7 @@ h2 {
   letter-spacing: 6px;
   display: inline-block;
   margin: 0;
+  padding-bottom: 40px;
 }
 
 .cta-orange {
