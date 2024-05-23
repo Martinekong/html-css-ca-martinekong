@@ -11,8 +11,6 @@
   justify-content: flex-end;
 }
 
-/* How do I get the background image to have no space up to the header ?? */
-
 body {
   color: white;
   font-family: helvetica, arial;
@@ -33,6 +31,10 @@ h2 {
   padding-bottom: 40px;
 }
 
+p {
+  font-family: helvetica, arial;
+}
+
 .cta-orange {
   width: 400px;
   height: 80px;
@@ -51,7 +53,30 @@ h2 {
   color: inherit;
 }
 
-.sale {}
+
+
+.sale {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 100px 40px 100px;
+  max-width: 1300px;
+}
+
+.sale-info {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(46, 72, 107);
+  border-radius: 10px;
+  width: 500px;
+  padding-left: 20px;
+}
+
+.sale-image {
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+
 
 .shop {}
 
@@ -63,3 +88,24 @@ h2 {
 
 
 /*Shoud the buttons be on the general css??*/
+
+
+
+/*Mobile styles (example)*/
+@media only screen and (max-width: 480px) {
+
+}
+
+/*Tablet styles (example)*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/*Desktop styles (example)*/
+@media only screen and (min-width: 769px) {
+
+}
+
+/*
+Media queries: the global styles will apply on all screens and then the @media will only apply the changes depending on the screen sizes. 
+*/

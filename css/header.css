@@ -14,6 +14,8 @@ header {
   font-weight: 400;
 }
 
+/* Need to make the header stick to the top of the page when scrolling!! */
+
 header li {
   display: inline;
   padding-right: 60px;
