@@ -1,0 +1,87 @@
+footer {
+  height: 140px;
+  background-color: rgb(46, 72, 107);
+  color: white;
+  display: grid;
+  grid-template-columns: 50px 200px 200px 350px;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+footer ul {
+  padding-left: 0px;
+  padding-top: 14px;
+}
+
+footer li {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+footer a:hover {
+  cursor: pointer;
+}
+
+.our-world {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  /*border-right: 1px solid white; When adding this the line becomes right after the section, and not neetly in between ...*/
+}
+
+.follow-us {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-column-gap: 5px;
+  padding-top: 16px;
+}
+
+.footer-icon {
+  width: 20px;
+}
+
+.newsletter {
+}
+
+.newsletter-grid {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.newsletter-mail {
+  position: relative;
+}
+
+.newsletter-mail-input {
+  height: 20px;
+  width: 310px;
+  margin-top: 5px;
+  border: none;
+  border-radius:6px;
+  padding-left: 10px;
+}
+
+.newsletter-button {
+  position: absolute;
+  background-color: rgb(254, 169, 51);
+  height: 12px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  right: 28px;
+  bottom: 0px;
+}
+
+/*
+How do I get the footer to be at the bottom of the page, and to the right and left, without making it stick like the header does??
+*/
