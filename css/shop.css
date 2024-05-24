@@ -1,0 +1,33 @@
+.shop {
+  display: grid;
+  margin-left: 50px;
+  margin-right: 50px;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 40px;
+  justify-content: center;
+}
+
+.shop-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(46, 72, 107);
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.jacket-info {
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.jacket-image {
+  width: 90%; /*need to find another way to do this since the images are different. It works now because all the text in the jacket info is three lines ...*/
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 10px;
+}

@@ -1,5 +1,23 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  margin-top: 160px;
+  margin-bottom: 120px;
+}
+
 p {
   font-family: helvetica, Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.breadcrumbs {}
+
+.orange {
+  color: rgb(254, 169, 51);
+  text-transform: uppercase;
 }
