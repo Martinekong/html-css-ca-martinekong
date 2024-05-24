@@ -12,6 +12,12 @@ header {
   font-family: helvetica neue, arial;
   font-size: 20px;
   font-weight: 400;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left:0;
+  z-index: 100;
 }
 
 /* Need to make the header stick to the top of the page when scrolling!! */
