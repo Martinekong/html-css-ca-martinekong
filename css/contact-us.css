@@ -1,0 +1,60 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  margin-left: 80px;
+  max-width: 550px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.customer-support,
+.connect {
+  border: 1px solid rgb(46, 72, 107);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  padding: 20px;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+}
+
+.support-type,
+.connect-type {
+  display: grid;
+  grid-template-columns: 40px 200px;
+  column-gap: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.connect-input {
+  width: 186px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgb(46, 72, 107);
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.connect-newsletter {
+  padding-left: 86px;
+}
+
+.contact-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 160px;
+}

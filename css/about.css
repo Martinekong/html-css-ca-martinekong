@@ -1,0 +1,19 @@
+main {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.about-banner {
+  max-width: 1200px;
+}
+
+.about-image {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.about-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
