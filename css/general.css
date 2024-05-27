@@ -29,6 +29,11 @@ p {
   text-transform: uppercase;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+
 .cta-blue {
   width: 200px;
   height: 40px;

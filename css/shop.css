@@ -1,3 +1,5 @@
+/*Styling for the shop page and the product specific page*/
+
 .shop {
   display: grid;
   margin-left: 50px;
@@ -30,4 +32,62 @@
   padding-top: 12px;
   padding-left: 16px;
   padding-right: 10px;
+}
+
+
+/*XPLORER FLEECE JACKET*/
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 80px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-text {
+  font-family: helvetica, arial, sans-serif;
+  display: grid;
+  grid-gap: 14px;
+}
+
+.product-text ul {
+  margin-top: 0;
+}
+
+.product-buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.product-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  gap: 10px;
+}
+
+.product-buttons a {
+  width: 300px;
+}
+
+.favourites-icon {
+  width: 28px;
+  padding: 5px;
+  border: 1px solid rgb(46, 72, 107);
+  border-radius: 6px;
 }
