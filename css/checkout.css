@@ -1,0 +1,44 @@
+/* Styling for the checkout and checkout-success page */
+
+.checkout-success {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 30px;
+}
+
+.checkout-success h1 {
+  text-align: center
+}
+
+.checkout-heading {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.checkout-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.checkout-text {
+  max-width: 500px;
+  padding-right: 80px;
+  display: grid;
+}
+
+.checkout-ellipse {
+  width: 300px;
+  position: relative;
+  padding-right: 200px;
+}
+
+.checkout-vector {
+  width: 300px;
+  position: absolute;
+  right: 360px;
+  top: 320px;
+}

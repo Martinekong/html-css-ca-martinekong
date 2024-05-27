@@ -38,11 +38,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-.underline {
-  text-decoration: underline;
-}
-
-
 .sale {
   display: grid;
   grid-template-columns: 400px 500px;
