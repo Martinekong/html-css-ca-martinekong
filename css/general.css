@@ -1,3 +1,10 @@
+/*Is helvetica a web safe font? win 7,3% mac 100%
+@font-face {
+  font-family: Helvetica;
+  src: url();
+}
+*/
+
 html, body {
   margin: 0;
   padding: 0;
@@ -35,12 +42,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*Need to add the transition background color*/
+  text-decoration: none;
+  transition-property: background;
+  transition-duration: 0.3s;
 }
 
-.cta-blue a {
-  text-decoration: none;
-  color: inherit;
+.cta-blue:hover {
+  background-color: rgb(66, 92, 127);
 }
 
 .cta-orange {
@@ -57,15 +65,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   transition-property: background;
   transition-duration: 0.3s;
 }
 
 .cta-orange:hover {
   background-color: rgb(255, 189, 71); /*another transition color?*/
-}
-
-.cta-orange a {
-  text-decoration: none;
-  color: inherit;
 }

@@ -45,7 +45,7 @@ h2 {
 
 .sale {
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 400px 500px;
   grid-template-rows: 178px;
   justify-content: center;
   margin-top: 50px;
@@ -58,7 +58,8 @@ h2 {
   flex-direction: column;
   justify-content: space-evenly;
   background-color: rgb(46, 72, 107);
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   padding-left: 20px;
 }
 
@@ -79,7 +80,8 @@ h2 {
 
 .sale-image {
   max-width: 100%;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .shop {
@@ -110,6 +112,12 @@ h2 {
   justify-content: space-between;
   padding: 20px 10px;
   align-items: center;
+}
+
+.shop-container-info a {
+  width: 200px;
+  height: 40px;
+  font-size: 1em;
 }
 
 
