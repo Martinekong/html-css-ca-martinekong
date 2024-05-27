@@ -8,13 +8,32 @@ main {
   margin-bottom: 20px;
 }
 
-.about-image {
-  max-width: 100%;
-  border-radius: 6px;
+.about-welcome {
+  font-size: 1.3em;
+}
+
+.our-story p{
+  margin-bottom: 20px;
+  font-size: 1.3em;
 }
 
 .about-bottom {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-top: 40px;
+}
+
+.about-bottom p {
+  margin-bottom: 30px;
+  font-size: 1.3em;
+}
+
+.philosophy {
+  margin-right: 40px;
+}
+
+.about-image {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 20px;
 }

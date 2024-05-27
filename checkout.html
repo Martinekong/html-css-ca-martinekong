@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <link rel="icon" type="image/x-icon" href="#"> <!--the favicon-->
   </head>
 
@@ -39,58 +40,139 @@
     </section>
   </header>
 
-  <main>
+  <main class="checkout">
 
     <section class="breadcrumbs"></section> 
     <!--need to add the breadcrumbs-->
 
-    <section>
-      <img src="#"> <!--The numbers from figma as icons or entities??-->
-      <h1>Shopping cart</h1>
-      <img src="assets/products/jacket-1.jpg">
-      <p>Xplorer fleece jacket</p>
-      <ul>
-        <li>Fit: Unisex</li>
-        <li>Color: Evening Green</li>
-        <li>Size: 40</li> <!--Maybe this has to be two ul, so that the text align?-->
-      </ul>
-      <p>Quantity: 1</p> <!--Need the - and + before and after. Html entity? Icons from figma?-->
-      <p>NOK 1 499</p>
+    <section class="shopping-cart">
+      <div class="checkout-step">
+        <p class="checkout-number">1</p>
+        <h1>Shopping cart</h1>  
+      </div>
+      <div class="cart-info">
+        <div class="checkout-jacket-container">
+          <img src="assets/products/jacket-1.jpg" class="checkout-jacket">
+        </div>
+        <div>
+          <div>
+            <p class="bold">Xplorer fleece jacket</p>
+          </div>
+          <div class="cart-info-list">
+            <ul>
+              <li>Fit:</li>
+              <li>Color:</li>
+              <li>Size:</li>
+            </ul>
+            <ul>
+              <li>Unisex</li>
+              <li>Evening green</li>
+              <li>40</li>
+            </ul>  
+          </div>
+        </div>
+        <div>
+          <p>Quantity: &#45; 1 &#43;</p> <!--Need the - and + before and after. Html entity? Icons from figma?-->
+        </div>
+        <div>
+          <p>NOK 1 499</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <img src="#"> <!--The numbers from figma as icons or entities??-->
-      <h1>Shipping information</h1>
-      <p>First name</p>
-      <input type="text" placeholder="Name">
-      <p>Last name</p>
-      <input type="text" placeholder="Last name">
-      <p>Date of birth</p>
-      <input type="date" placeholder="DD/MM/YYYY">
-      <p>Phone</p>
-      <input type="tel" placeholder="+47 10203040">
-      <p>Street address</p>
-      <input type="text" placeholder="Rainystreet 1">
-      <p>Postal code</p>
-      <input type="number" placeholder="0000">
-      <p>City</p>
-      <input type="text" placeholder="Oslo">
-      <p>Country</p>
-      <input type="text" placeholder="Norway">
-      <p>Email</p>
-      <input type="email" placeholder="example@mail.com">
-    </section>
+    <div class="shipping-delivery">
+      <section class="shipping-information">
+        <div class="checkout-step">
+          <p class="checkout-number">2</p>
+          <h1>Shipping information</h1>  
+        </div>
+        <div class="shipping-details">
+          <div>
+            <p>First name</p>
+            <input type="text" placeholder="Name">
+            <p>Last name</p>
+            <input type="text" placeholder="Last name">
+            <p>Date of birth</p>
+            <input type="number" placeholder="DD/MM/YYYY">
+            <p>Phone</p>
+            <input type="tel" placeholder="+47 10203040">    
+          </div>
+          <div>
+            <p>Street address</p>
+            <input type="text" placeholder="Rainystreet 1">
+            <div class="input-small">
+              <div>
+                <p>Postal code</p>
+                <input type="number" placeholder="0000">    
+              </div>
+              <div>
+                <p>City</p>
+                <input type="text" placeholder="Oslo">    
+              </div>
+            </div>
+            <p>Country</p>
+            <input type="text" placeholder="Norway">
+            <p>Email</p>
+            <input type="email" placeholder="example@mail.com">    
+          </div>
+        </div>
+      </section>
+  
+      <section class="delivery">
+        <div class="checkout-step">
+          <p class="checkout-number">3</p>
+          <h1>Delivery</h1>  
+        </div>
+        <div class="delivery-method">
+          <div>
+            <p class="bold">Choose delivery method</p>
+          </div>
+          <div class="delivery-method-grid">
+            <div>
+              <form>
+                <div>
+                  <input type="radio" name="delivery-method" value="post-office" id="post-office">
+                  <label for="post-office">Post office pick-up</label>
+                </div>
+                <div>
+                  <input type="radio" name="delivery-method" value="store" id="store">
+                  <label for="store">Store pick-up</label>  
+                </div>
+                <div>
+                  <input type="radio" name="delivery-method" value="package-box" id="package-box">
+                  <label for="post-office">Package box</label>  
+                </div>
+                <div>
+                  <input type="radio" name="delivery-method" value="mailbox" id="mailbox">
+                  <label for="post-office">Mailbox delivery</label>  
+                </div>
+                <div>
+                  <input type="radio" name="delivery-method" value="doormat" id="doormat">
+                  <label for="post-office">Doormat delivery</label>  
+                </div>
+              </form>    
+            </div>
+            <div>
+              <ul>
+                <li>free</li>
+                <li>free</li>
+                <li>nok 29</li>
+                <li>nok 49</li>
+                <li>nok 59</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>  
+    </div>
 
-    <section>
-      <img src="#"> <!--The numbers from figma as icons or entities??-->
-      <h1>Delivery</h1>
-      <p>Choose delivery method</p>
-      <!--The checkboxes or radio buttons for the delivery options-->
-    </section>
 
-    <section>
-      <img src="#"> <!--The numbers from figma as icons or entities??-->
-      <h1>Payment</h1>
+
+    <section class="payment">
+      <div class="checkout-step">
+        <p class="checkout-number">4</p>
+        <h1>Payment</h1>  
+      </div>
       <p>Payment method</p>
       <!--The checkboxes or radio butttons for the payment options-->
       <img src="assets/icons/visa.png">
@@ -106,9 +188,11 @@
       <input type="number" placeholder="123">
     </section>
 
-    <section>
-      <img src="#"> <!--The numbers from figma as icons or entities??-->
-      <h1>Order summary</h1>
+    <section class="order-summary">
+      <div class="checkout-step">
+        <p class="checkout-number">5</p>
+        <h1>Order summary</h1>  
+      </div>
       <p>1 x explorer fleece jacket</p>
       <p>NOK 1499</p>
       <p>Subtotal</p>
@@ -117,7 +201,7 @@
       <p>FREE</p>
       <p>Total</p>
       <p>NOK 1499</p>
-      <button class="cta-blue">CHECKOUT NOW</button> <!--Need to link this to the checkout-success.html. Add this as a <link> or a <button> Maybe style the uppercase netters in CSS?-->
+      <a href="checkout-success.html" class="cta-blue">checkout now</a>
     </section>
 
   </main>

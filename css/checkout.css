@@ -1,5 +1,142 @@
 /* Styling for the checkout and checkout-success page */
 
+.checkout {
+  margin-right: 200px;
+  margin-left: 200px;
+  font-family: helvetica, arial, sans-serif;
+}
+
+.shopping-cart,
+.shipping-information,
+.delivery,
+.payment,
+.order-summary {
+  margin-bottom: 40px; /*Can call this all under one class!*/
+}
+
+.checkout-step {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.checkout-number {
+  border-radius: 4px;
+  display: inline-block;
+  padding:6px 10px;
+  background-color: rgb(46, 72, 107);
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.cart-info {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.checkout-jacket-container {
+  max-width: 150px;
+}
+
+.checkout-jacket {
+  width: 100%;
+}
+
+.cart-info-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cart-info ul {
+  padding-left: 0px;
+}
+
+.cart-info-list li {
+  display: block;
+  padding-bottom: 14px;
+}
+
+
+.shipping-delivery {
+  display: grid;
+  grid-template-columns: 600px 500px;
+  
+}
+
+.shipping-details {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  justify-content: space-between;
+  max-width: 500px;
+  padding: 0 20px 20px 20px;
+}
+
+.shipping-details p {
+  margin-top: 20px;
+}
+
+.shipping-details input {
+  width: 200px;
+  height: 24px;
+  margin-top: 10px;
+  border: 1px solid rgb(46, 72, 107);
+  border-radius: 2px;
+  padding: 4px;
+}
+
+.input-small input {
+  width: 80px;
+}
+
+.input-small {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.delivery-method {
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  padding: 26px;
+  max-width: 400px;
+}
+
+.delivery-method form,
+.delivery-method ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.delivery-method li {
+  display: block;
+  text-transform: uppercase;
+}
+
+.delivery-method-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+
+
+
+.order-summary a { /*The button at the end*/
+  text-transform: uppercase;
+}
+
+
+/* Checkout success */
+
 .checkout-success {
   display: flex;
   flex-direction: column;
