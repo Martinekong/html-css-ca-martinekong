@@ -1,6 +1,4 @@
-body {
-  position: relative;
-}
+/* HEADER */
 
 header {
   background-color: rgb(46, 72, 107);
@@ -104,9 +102,8 @@ header {
   .hamburger-menu [type="checkbox"]:checked ~ .hamburger-menu-links {
     left: 0px;
     transition: 0.5s;
+    /* How to transition back out smoothly ?? */
   }
-
-
 }
 
 /* DESKTOP STYLES */
@@ -152,6 +149,7 @@ header {
   .search-field-desktop input {
     height: 30px;
     width: 300px;
+    /* Have the width in % so that it changes? */
     border: none;
     border-radius: 6px;
     font-family: helvetica, arial, sans-serif;
@@ -168,5 +166,152 @@ header {
   .basket-icon {
     margin-left: 20px;
   }
+  /* The basket icon is blurry ... */
+}
 
+
+/* FOOTER */
+
+/* I the middle between mobile and desktop all the words scramble together ... */
+
+footer {
+  background-color: rgb(46, 72, 107);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-rainydays {
+  width: 100%;
+}
+
+.our-world ul {
+  padding: 0;
+}
+
+.our-world li {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.our-world a {
+  text-decoration: none;
+  color: white;
+}
+
+.follow-us {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-icon {
+  width: 100%;
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* The rainydays logo for the footer is blurry ... */
+
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 700px) {
+  .footer {
+    height: 360px;
+  }
+
+  .footer-top {
+    border-bottom: 1px solid white;
+  }
+  /* Why is there a border at the bottom of the footer-bottom ? */
+  
+  .footer-bottom {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .newsletter-mail input {
+    width: 70%;
+    height: 24px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 10px;
+    font-size: 1em;
+  }
+  
+  .newsletter-mail {
+    position: relative;
+  }
+  
+  .newsletter-button {
+    position: absolute;
+    top: 0px;
+    left: 65%;
+    background-color: rgb(254, 169, 51);
+    padding: 3.5px 12px;
+    border-radius: 6px;
+  }  
+
+  .desktop-newsletter {
+    display: none;
+  }
+}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 701px) {
+  .footer-bottom {
+    display: none;
+  }
+
+  .desktop-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+
+  .desktop-newsletter-mail-input {
+    width: 80%;
+    height: 24px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 10px;
+    font-size: 1em;
+  }
+
+  .desktop-newsletter-mail {
+  position: relative;
+  }
+
+  .desktop-newsletter-button {
+    background-color: rgb(254, 169, 51);
+    padding: 3.5px 12px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 75%;
+  }
 }

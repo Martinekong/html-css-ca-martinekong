@@ -6,8 +6,7 @@
     <meta name="description" content="Your checkout at Rainydays was a success">
     <title>Rainydays | Checkout success</title>
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/checkout.css">
     <link rel="icon" type="image/x-icon" href="#"> <!--the favicon-->
   </head>
@@ -236,59 +235,91 @@
 
   </main>
 
-
   <footer>
-    <section>
-      <img src="assets/icons/rainydays-logo.png" alt="Rainydays logo">
+    <section class="footer-top">
+
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="assets/icons/rainydays-logo.png" alt="Rainydays logo" class="footer-rainydays">  
+        </a>
+      </div>
+
+      <div class="our-world">
+        <div>
+          <p class="bold">Our world</p>
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li><a href="about-us.html">About us</a></li>
+              <li><a href="contact-us.html">Contact us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </nav>  
+        </div>  
+      </div>
+
+      <div class="follow-us">
+        <div>
+          <p class="bold">Follow us</p>
+        </div>
+        <div class="social-media">
+          <div>
+            <img src="assets/icons/facebook-icon.png" alt="Facebook icon" class="footer-icon">
+          </div>
+          <div>
+            <p>Facebook</p>
+          </div>
+        </div>
+        <div class="social-media">
+          <div>
+            <img src="assets/icons/instagram-icon.png" alt="Instagram icon" class="footer-icon">
+          </div>
+          <div>
+            <p>Instagram</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="desktop-newsletter">
+        <div>
+          <p class="bold">Newsletter</p>
+        </div>
+        <div>
+          <p>Be the first to know about our latest drops, sales, news and more.</p>
+        </div>
+        <div>
+          <p>Join the Rainydays community!</p>
+        </div>
+        <div class="desktop-newsletter-mail">
+          <input type="text" class="desktop-newsletter-mail-input"placeholder="example@mail.com">
+          <img src="assets/icons/vector-icon.png"   class="desktop-newsletter-button">
+            <!--need to make an overlay when pressed-->
+        </div>  
+      </div>
+
     </section>
 
-    <section class="our-world">
-      <div>
-        <p>Our world</p>
-      </div>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="about-us.html">About us</a></li>
-            <li><a href="contact-us.html">Contact us</a></li>
-            <li><a href="faq">FAQ</a></li>
-          </ul>
-        </nav>  
-      </div>
-    </section>
-
-    <section class="follow-us">
-      <div>
-        <p>Follow us</p>
-      </div>
-      <div class="social-media">
-        <img src="assets/icons/facebook-icon.png" alt="Facebook icon" class="footer-icon">
-        <p>Facebook</p>
-      </div>
-      <div class="social-media">
-        <img src="assets/icons/instagram-icon.png" alt="Instagram icon" class="footer-icon">
-        <p>Instagram</p>
-      </div>
-    </section>
-
-    <section class="newsletter">
-      <div>
-        <p>Newsletter</p>
-      </div>
-      <div class="newsletter-grid">
-        <p>Receive exclusive offers, updates on new arrivals, and insider tips for your next outdoor adventure straight to your inbox.</p>
-      </div>
-      <div>
-        <p>Join the Rainydays community!</p>
+    <section class="footer-bottom">
+      <div class="footer-newsletter">
+        <div>
+          <p class="bold">Newsletter</p>
+        </div>
+        <div>
+          <p>Be the first to know about our latest drops,   sales, news and more.</p>
+        </div>
+        <div>
+          <p>Join the Rainydays community!</p>
+        </div>
         <div class="newsletter-mail">
-          <input type="text" class="newsletter-mail-input" placeholder="example@mail.com">
-          <img src="assets/icons/vector-icon.png" class="newsletter-button"> <!--need to make an overlay when pressed-->
+          <input type="text"  class="newsletter-mail-input"placeholder="example@ma il.com">
+          <img src="assets/icons/vector-icon.png"     class="newsletter-button">
+            <!--need to make an overlay when pressed-->
         </div>
       </div>
     </section>
 
   </footer>
-
 
 </body>
 </html>

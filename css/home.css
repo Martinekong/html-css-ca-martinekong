@@ -10,6 +10,7 @@
   padding-bottom: 20px;
   justify-content: flex-end;
   color: white;
+  margin-bottom: 50px;
 }
 
 h1 {
@@ -49,12 +50,14 @@ h2 {
 /* SALE */
 
 .sale {
-  margin: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   background-color: rgb(46, 72, 107);
   display: flex;
   flex-direction: column-reverse;
   color: white;
   border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 .sale-info {
@@ -91,6 +94,8 @@ h2 {
   /* THE MEDIA QUERIE FOR DESKTOP SALE */
   .sale {
     flex-direction: row;
+    min-width: 800px;
+    min-height: 100px;
     margin-left: 140px;
     margin-right: 140px;
   }
@@ -114,10 +119,11 @@ h2 {
 }
 
 .shop-section {
-  display: grid;
-  grid-template-columns: 470px 470px;
-  grid-gap: 60px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .shop-image {
@@ -145,22 +151,31 @@ h2 {
   font-size: 1em;
 }
 
+@media only screen and (min-width: 701px) {
+  .shop-section {
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 140px;
+    margin-right: 140px;  
+}
+}
+
 
 
 /* SHOP BY ACTIVITY */
 
 .activity {
   margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .activity-section {
   display: grid;
-  grid-template-columns: 320px 320px 320px;
-  grid-gap: 18px;
-  margin-bottom: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .activity-container {
@@ -170,6 +185,8 @@ h2 {
   color: white;
   align-items: center;
   border-radius: 6px;
+  min-height: 100px;
+  max-width: 400px;
 }
 
 .activity-image {
@@ -184,25 +201,18 @@ h2 {
   font-size: 20px;
 }
 
-/*Shoud the buttons be on the general css??*/
-
-
-
-/*Mobile styles (example)*/
-@media only screen and (max-width: 480px) {
-
+@media only screen and (min-width: 701px) {
+  .activity-section {
+    margin-right: 140px;
+    margin-left: 140px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-/*Tablet styles (example)*/
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-
+.browse-more {
+  margin-top: 30px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/*Desktop styles (example)*/
-@media only screen and (min-width: 769px) {
-
-}
-
-/*
-Media queries: the global styles will apply on all screens and then the @media will only apply the changes depending on the screen sizes. 
-*/

@@ -11,6 +11,10 @@ html, body {
   height: 100%;
 }
 
+body {
+  position: relative;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -18,14 +22,17 @@ p {
 
 main {
   margin-top: 230px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
   font-family: helvetica, arial, sans-serif;
+  /* Cant add margin right left on all because of the banner on the index.html */
 }
+
+
 
 @media only screen and (min-width: 701px) {
   main {
     margin-top: 130px;
-    margin-bottom: 400px;
+    margin-bottom: 50px;
   }
 }
 
@@ -96,3 +103,17 @@ main {
 .cta-orange:hover {
   background-color: rgb(255, 189, 71); /*another transition color?*/
 }
+
+/*Mobile styles (example)*/
+@media only screen and (max-width: 700px) {
+
+}
+
+/*Desktop styles (example)*/
+@media only screen and (min-width: 701px) {
+
+}
+
+/*
+Media queries: the global styles will apply on all screens and then the @media will only apply the changes depending on the screen sizes. 
+*/
