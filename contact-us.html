@@ -14,32 +14,60 @@
   <body>
 
     <header>
-      <section>
-        <img src="assets/icons/rainydays-logo-cropped.png" alt="Rainydays logo">
-      </section>
+      <div class="header-top">
 
-      <section>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="about-us.html">About</a></li>
-            <li><a href="contact-us.html" class="active">Contact</a></li>
-          </ul>
-        </nav>  
-      </section>
+        <section class="hamburger-menu">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="hamburger-menu-links">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>     
+        </section>
 
-      <section class="search">
-        <input type="text" class="search-field">
-        <img src="assets/icons/search-icon.png" class="search-icon">
-      </section>
+        <section class="rainydays-logo">
+          <a href="index.html">
+            <img src="assets/icons/rainydays-logo-cropped.png">
+          </a>
+        </section>
 
-      <section>
-        <img src="assets/icons/heart-icon-white.png" alt="heart icon for favourites" class="header-icons">
-        <img src="assets/icons/basket-icon-white.png" alt="basket icon for shopping cart" class="header-icons">  
-      </section>
+        <section class="desktop-nav">
+          <nav>
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="search-field-desktop">
+          <input type="text" class="search-field">
+          <img src="assets/icons/search-icon.png" class="search-icon">
+        </section>
+
+        <section class="backet-container">
+          <img src="assets/icons/basket-icon-white.png" alt="basket icon for shopping cart" class="basket-icon">
+        </section>  
+
+      </div>
+
+      <div class="header-bottom">
+
+        <section class="search-field-mobile">
+          <input type="text" class="search-field">
+          <img src="assets/icons/search-icon.png" class="search-icon">
+        </section>
+
+      </div>
     </header>
-
 
     <main>
       <section class="breadcrumbs"></section> 
@@ -50,7 +78,7 @@
           <section class="contact-us">
             <h1>Contact us</h1>
             <p>Our team is there for you, and will answer all inquirees as soon as possible. Check out our most frequently asked questions, or contact our support to get the help you need.</p>
-            <button class="cta-blue">FAQ</button> <!--<a href> to faq.html-->
+            <a href="faq.html" class="cta-blue">FAQ</a>
             <p><span class="bold">Customer support:</span> Our dedicated customer support team is here to assist you with any questions or concerns you may have. Whether you need help with sizing, product recommendations, or assistance with your order, we're just a message away.</p>
             <p><span class="bold">Feedback and Suggestions:</span> We value your feedback and are constantly striving to improve our products and services. If you have any suggestions for how we can better serve you, please don't hesitate to let us know. Your input helps us continue to grow and evolve as a brand.</p>
             <p><span class="bold">Connect with us:</span> Stay connected with Rainy Days on social media for the latest news, updates, and behind-the-scenes content. Follow us on Facebook and Instagram to join our community of outdoor enthusiasts and adventure seekers.</p>
@@ -77,7 +105,7 @@
               <p>support@rainydays.com</p>  
             </div>
             <div>
-              <button class="cta-blue">Send us a message</button> <!--<a href> to contact-form.html-->
+              <a href="contact-form.html" class="cta-blue">Send us a message</a>
             </div>
           </section>
     

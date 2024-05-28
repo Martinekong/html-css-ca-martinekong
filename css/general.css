@@ -11,6 +11,11 @@ html, body {
   height: 100%;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 main {
   margin-top: 230px;
   margin-bottom: 120px;
@@ -20,15 +25,15 @@ main {
 @media only screen and (min-width: 701px) {
   main {
     margin-top: 130px;
+    margin-bottom: 400px;
   }
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .breadcrumbs {}
+
+
+
+/* SPAN CLASSES */
 
 .orange {
   color: rgb(254, 169, 51);
@@ -42,6 +47,10 @@ p {
 .underline {
   text-decoration: underline;
 }
+
+
+
+/* BUTTONS */
 
 .cta-blue {
   width: 200px;
@@ -87,16 +96,3 @@ p {
 .cta-orange:hover {
   background-color: rgb(255, 189, 71); /*another transition color?*/
 }
-
-
-
-/*
-Tip to reset all default styles:
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-
-*/
