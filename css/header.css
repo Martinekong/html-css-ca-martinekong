@@ -1,69 +1,172 @@
+body {
+  position: relative;
+}
+
 header {
   background-color: rgb(46, 72, 107);
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 0px;
-
-  font-family: helvetica neue, arial;
-  font-size: 20px;
-  font-weight: 400;
-
   position: fixed;
   top: 0;
   right: 0;
   left:0;
-  z-index: 100;
-}
-
-/* Need to make the header stick to the top of the page when scrolling!! */
-
-header li {
-  display: inline;
-  padding-right: 60px;
-}
-
-header a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-header a:hover {
-  cursor: pointer;
+  z-index: 1;
 }
 
 .active {
   text-decoration: underline;
 }
 
-.search {
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.search-field-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
-.search-field {
-  height: 30px;
-  width: 300px;
+.search-field-mobile input {
+  width: 100%;
+  height: 26px;
   border-radius: 6px;
   border: none;
-  padding-left: 20px;
-  font-family: helvetica neue;
-  font-size: 16px;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 1em;
 }
 
-.search img {
+.search-field-mobile .search-icon {
   position: absolute;
-  top: 6px;
-  right: 8px;
-  height: 20px;
+  top: 11px;
+  right: 6px;
 }
 
-.header-icons {
-  padding-left: 40px;
-  height: 26px;
+/* MOBILE STYLES */
+@media only screen and (max-width: 700px) {
+  
+  header {
+    height: 150px;
+    padding: 40px 40px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .search-field-desktop {
+    display: none;
+  }
+
+  .hamburger-menu [type="checkbox"] {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  opacity: 0;
+  }
+
+  .hamburger-menu span {
+    width: 40px;
+    height: 6px;
+    background-color: white;
+    display: grid;
+    border-radius: 2px;
+    margin-bottom: 6px;
+  }
+  
+  .hamburger-menu-links {
+    position: absolute;
+    top: 120px;
+    left: -200px;
+    bottom: -4000px;
+    width: 165px;
+    z-index: 2;
+    background-color: rgb(46, 72, 107);
+  }
+  
+  .hamburger-menu-links li {
+    display: block;
+    padding-bottom: 20px;
+    margin-top: 60px;
+  }
+  
+  .hamburger-menu-links a {
+    color: white;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.3em;
+    text-decoration: none;
+  }
+
+  .hamburger-menu [type="checkbox"]:checked ~ .hamburger-menu-links {
+    left: 0px;
+    transition: 0.5s;
+  }
+
+
 }
 
-/*HAVE TO ADD MEDIA QUERIES - it is now coded for full screen desktop*/
+/* DESKTOP STYLES */
+@media only screen and (min-width: 701px) {
+  header {
+    height: 120px;
+    padding: 10px 40px 0px 40px;
+    align-items: center;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .header-bottom {
+    display: none;
+  }
+
+  .hamburger-menu-links {
+    display: none;
+  }
+
+  .desktop-nav li {
+    display: inline;
+    padding-right: 60px;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.3em;
+  }
+
+  .desktop-nav a:hover {
+    cursor: pointer;
+  }
+
+  .search-field-desktop {
+  position: relative;
+  }
+
+  .search-field-desktop input {
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 6px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1em;
+    padding-left: 10px;
+  }
+
+  .search-field-desktop .search-icon {
+    position: absolute;
+    top: 4px;
+    right: 2px;
+  }
+
+  .basket-icon {
+    margin-left: 20px;
+  }
+
+}

@@ -12,9 +12,15 @@ html, body {
 }
 
 main {
-  margin-top: 160px;
+  margin-top: 230px;
   margin-bottom: 120px;
   font-family: helvetica, arial, sans-serif;
+}
+
+@media only screen and (min-width: 701px) {
+  main {
+    margin-top: 130px;
+  }
 }
 
 p {
@@ -81,3 +87,16 @@ p {
 .cta-orange:hover {
   background-color: rgb(255, 189, 71); /*another transition color?*/
 }
+
+
+
+/*
+Tip to reset all default styles:
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+*/
