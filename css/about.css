@@ -20,6 +20,11 @@ main {
 
 .about-us img {
   max-width: 100%;
+  border-radius: 4px;
+}
+
+.about-us h2 {
+  margin-top: 0;
 }
 
 @media only screen and (min-width: 701px) {
