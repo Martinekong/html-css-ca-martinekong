@@ -1,4 +1,18 @@
-/*Styling for the shop page and the product specific page*/
+main {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 250px
+}
+
+@media only screen and (min-width: 701px) {
+  main {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 160px;
+  }
+}
+
+/* SHOP */
 
 .shop {
   display: grid;
@@ -35,59 +49,35 @@
 }
 
 
+
 /*XPLORER FLEECE JACKET*/
 
-.product-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 80px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.product-info {
+.product-specific {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
-.product-text {
-  font-family: helvetica, arial, sans-serif;
-  display: grid;
-  grid-gap: 14px;
+.product-specific p {
+  margin-bottom: 1em;
 }
 
-.product-text ul {
-  margin-top: 0;
+.product-image-container {
+  max-width: 400px;
+  align-self: center;
 }
 
-.product-buy {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: end;
+.product-image {
+  width: 100%;
 }
 
-.product-boxes {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.product-buttons {
-  display: flex;
-  flex-direction: row;
-  width: 400px;
-  gap: 10px;
-}
-
-.product-buttons a {
-  width: 300px;
-}
-
-.favourites-icon {
-  width: 28px;
-  padding: 5px;
+.product-specific select {
+  width: 100%;
   border: 1px solid rgb(46, 72, 107);
-  border-radius: 6px;
+  height: 2em;
+}
+
+.product-specific a {
+  width: 100%;
+  margin-top: 0.5em;
 }
