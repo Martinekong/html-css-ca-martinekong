@@ -23,6 +23,11 @@ main {
   border-radius: 4px;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+} /*same on all pages except index.html*/
+
 .about-us h2 {
   margin-top: 0;
 }
