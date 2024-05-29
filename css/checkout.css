@@ -23,7 +23,8 @@ main {
 }
 
 h1 {
-  /* get it center aligned */
+  display: flex;
+  justify-content: center;
 }
 
 
