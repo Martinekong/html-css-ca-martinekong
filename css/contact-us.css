@@ -12,11 +12,20 @@ main {
   margin-top: 250px;
 }
 
+h1 {
+  display: flex;
+  /*justify-content center only on desktop*/
+}
+
 @media only screen and (min-width: 701px) {
   main {
     margin-left: 140px;
     margin-right: 140px;
     margin-top: 140px;
+  }
+
+  h1 {
+    justify-content: center;
   }
 }
 
