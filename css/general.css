@@ -27,6 +27,10 @@ main {
   /* Cant add margin right left on all because of the banner on the index.html */
 }
 
+a {
+  text-decoration: none;
+}
+
 
 
 @media only screen and (min-width: 701px) {

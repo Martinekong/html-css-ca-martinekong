@@ -1,3 +1,5 @@
+/* HAVENT CODED FOR DESKTOP ON PRODUCT SPECIFIC */
+
 main {
   margin-left: 50px;
   margin-right: 50px;
@@ -12,42 +14,33 @@ main {
   }
 }
 
+h1 {
+  /* get it center aligned */
+}
+
 /* SHOP */
 
 .shop {
-  display: grid;
-  margin-left: 50px;
-  margin-right: 50px;
-  grid-template-columns: 300px 300px 300px;
-  grid-gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
   justify-content: center;
 }
 
 .shop-container {
-  display: flex;
-  flex-direction: column;
   background-color: rgb(46, 72, 107);
-  width: 300px;
-  align-items: center;
-  justify-content: center;
   color: white;
+  padding: 1em;
+  border-radius: 4px;
 }
 
-.jacket-info {
-  padding: 10px 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-size: 14px;
+.shop img {
+  max-width: 300px;
 }
 
-.jacket-image {
-  width: 90%; /*need to find another way to do this since the images are different. It works now because all the text in the jacket info is three lines ...*/
-  padding-top: 12px;
-  padding-left: 16px;
-  padding-right: 10px;
+.shop p {
+  padding-top: 0.5em;
 }
-
 
 
 /*XPLORER FLEECE JACKET*/
@@ -80,4 +73,11 @@ main {
 .product-specific a {
   width: 100%;
   margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 700px) {
+}
+
+@media only screen and (min-width: 701px) {
+
 }
