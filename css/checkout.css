@@ -1,10 +1,33 @@
-/* Styling for the checkout and checkout-success page */
+/* 
+THIS STYLESHEET IS FOR:
+checkout.html
+checkout-success.html
 
-.checkout {
-  margin-right: 200px;
-  margin-left: 200px;
-  font-family: helvetica, arial, sans-serif;
+Maybe have this in the shop.css ??
+
+ */
+
+/* THESE STYLES ARE THE SAME ON ALL PAGES EXCEPT index.htm */
+main {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 250px;
 }
+
+@media only screen and (min-width: 701px) {
+  main {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 160px;
+  }
+}
+
+h1 {
+  /* get it center aligned */
+}
+
+
+/*CHECKOUT*/
 
 .shopping-cart,
 .shipping-information,
@@ -135,47 +158,33 @@
 }
 
 
-/* Checkout success */
+/* CHECKOUT SUCCESS */
 
 .checkout-success {
   display: flex;
-  flex-direction: column;
-  margin-left: 200px;
-  margin-right: 200px;
-  gap: 30px;
+  gap: 1em;
 }
 
-.checkout-success h1 {
-  text-align: center
+.checkout-success p {
+  margin-bottom: 1em;
 }
 
-.checkout-heading {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 30px;
+.checkmark {
+  border: 6px solid rgb(255, 189, 71);
+  padding: 1em 2em;
+  border-radius: 4px;
 }
 
-.checkout-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@media only screen and (max-width: 700px) {
+  .checkout-success {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.checkout-text {
-  max-width: 500px;
-  padding-right: 80px;
-  display: grid;
-}
-
-.checkout-ellipse {
-  width: 300px;
-  position: relative;
-  padding-right: 200px;
-}
-
-.checkout-vector {
-  width: 300px;
-  position: absolute;
-  right: 360px;
-  top: 320px;
+/*Desktop styles (example)*/
+@media only screen and (min-width: 701px) {
+  .checkout-success {
+    flex-direction: row;
+  }
 }

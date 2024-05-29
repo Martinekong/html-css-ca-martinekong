@@ -1,3 +1,29 @@
+/* 
+THIS STYLESHEET IS FOR:
+contact-us.html
+contact-form.html
+faq.html
+
+*/
+
+main {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 250px;
+}
+
+@media only screen and (min-width: 701px) {
+  main {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 140px;
+  }
+}
+
+  /* the styles above is the same on all pages except index */
+
+
+/* CONTACT US */
 .contact-us {
   display: flex;
   flex-direction: column;
@@ -53,4 +79,62 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 160px;
+}
+
+
+/* CONTACT FORM */
+
+
+
+/* FAQ */
+
+.faq summary,
+.faq-contact p {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.faq-container {
+  margin-bottom: 1em;
+}
+
+.faq-contact {
+  display: flex;
+}
+
+.faq-contact img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.faq-positioning {
+  /*displary flex*/
+}
+
+/*Mobile styles (example)*/
+@media only screen and (max-width: 700px) {
+  .faq-positioning {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-contact {
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 1em;
+  }
+}
+
+/*Desktop styles (example)*/
+@media only screen and (min-width: 701px) {
+  .faq-positioning {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 1em;
+  }
+
+  .faq-contact {
+    flex-direction: column;
+    gap: 1em;
+  }
 }
