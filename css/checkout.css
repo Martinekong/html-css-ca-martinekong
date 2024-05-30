@@ -30,136 +30,151 @@ h1 {
 
 /*CHECKOUT*/
 
-.shopping-cart,
-.shipping-information,
-.delivery,
-.payment,
-.order-summary {
-  margin-bottom: 40px; /*Can call this all under one class!*/
+@media only screen and (max-width: 700px) {
+  .checkout-flex {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.checkout-step {
+@media only screen and (min-width: 701px) {
+  .checkout-flex {
+    display: grid;
+  }
+}
+
+.checkout-title {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2em;
 }
 
 .checkout-number {
-  border-radius: 4px;
-  display: inline-block;
-  padding:6px 10px;
   background-color: rgb(46, 72, 107);
   color: white;
-  font-size: 1.2em;
-  font-weight: bold;
+  display: inline;
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
 }
 
-.cart-info {
-  display: flex;
-  align-items: center;
+.delivery-container,
+.payment-container {
   border: 2px solid rgb(46, 72, 107);
   border-radius: 4px;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.checkout-jacket-container {
-  max-width: 150px;
-}
-
-.checkout-jacket {
-  width: 100%;
-}
-
-.cart-info-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.cart-info ul {
-  padding-left: 0px;
-}
-
-.cart-info-list li {
-  display: block;
-  padding-bottom: 14px;
-}
-
-
-.shipping-delivery {
-  display: grid;
-  grid-template-columns: 600px 500px;
-  
-}
-
-.shipping-details {
-  display: flex;
-  align-items: center;
-  border: 2px solid rgb(46, 72, 107);
-  border-radius: 4px;
-  justify-content: space-between;
-  max-width: 500px;
-  padding: 0 20px 20px 20px;
-}
-
-.shipping-details p {
-  margin-top: 20px;
-}
-
-.shipping-details input {
-  width: 200px;
-  height: 24px;
-  margin-top: 10px;
-  border: 1px solid rgb(46, 72, 107);
-  border-radius: 2px;
-  padding: 4px;
-}
-
-.input-small input {
-  width: 80px;
-}
-
-.input-small {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.delivery-method {
-  border: 2px solid rgb(46, 72, 107);
-  border-radius: 4px;
-  padding: 26px;
-  max-width: 400px;
-}
-
-.delivery-method form,
-.delivery-method ul {
+  padding: 1em;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-top: 24px;
+} /* add the .checkout-container, .shipping-information-container and the .shopping-cart-container? All containers can be compressed*/
+
+.shopping-cart-container {
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  padding: 1em;
+  display: flex;
+  gap: 2em;
+  justify-content: space-evenly;
 }
 
-.delivery-method li {
-  display: block;
+.shopping-cart-container img {
+  max-width: 80%;
+}
+
+.shopping-cart-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shopping-cart-description {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.shopping-cart-description p {
+  padding-bottom: 1em;
+}
+
+
+.shipping-information-container form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  padding: 1em 3em;
+}
+
+.shipping-information-container input,
+.payment-info input {
+  margin-top: 0.4em;
+  margin-bottom: 1em;
+  padding-left: 0.5em;
+  height: 2em;
+  border: 1px solid rgb(46, 72, 107);
+  border-radius: 2px;
+  font-size: 1em
+}
+
+.delivery-container div {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delivery-container label {
+  min-width: 132px;
+}
+
+.delivery-container p {
+  min-width: 57px;
   text-transform: uppercase;
 }
 
-.delivery-method-grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
+
+.payment-container div {
+  margin-bottom: 1em;
+  display: flex;
+  gap: 2em;
+}
+
+.payment-container label {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
 }
 
 
 
+.checkout-container {
+  position: relative;
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-.order-summary a { /*The button at the end*/
-  text-transform: uppercase;
+.checkout-container p {
+  padding-bottom: 2em;
+}
+
+.checkout-container a {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
 /* CHECKOUT SUCCESS */
+
 
 .checkout-success {
   display: flex;

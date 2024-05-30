@@ -69,7 +69,7 @@
     </div>
   </header>
 
-  <main class="checkout">
+  <main>
 
     <section class="breadcrumbs">
       <nav>
@@ -81,163 +81,146 @@
       </nav>
     </section>
 
-    <section class="shopping-cart">
-      <div class="checkout-step">
+    <h1>Checkout</h1>
+
+    <section>
+      <div class="checkout-title">
         <p class="checkout-number">1</p>
-        <h1>Shopping cart</h1>  
+        <h2>Shopping cart</h2>  
       </div>
-      <div class="cart-info">
-        <div class="checkout-jacket-container">
-          <img src="assets/products/jacket-1.jpg" class="checkout-jacket">
+      <div class="shopping-cart-container">
+        <div>
+          <img src="assets/products/jacket-1.jpg">
+        </div>
+        <div class="shopping-cart-info">
+          <p class="bold">Xplorer fleece jacket</p>
+          <div class="shopping-cart-description">
+            <div>
+              <p>Fit:</p>
+              <p>Color:</p>
+              <p>Size:</p>
+            </div>
+            <div>
+              <p>Unisex</p>
+              <p>Evening green</p>
+              <p>Medium</p>
+            </div>
+          </div>
+          <p class="bold">NOK 1 499</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="checkout-title">
+        <p class="checkout-number">2</p>
+        <h2>Shipping-information</h2>  
+      </div>
+      <div class="shipping-information-container">
+        <form>
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Name" required>
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+          <label for="date-of-birth">Date of birth</label>
+          <input type="text" id="date-of-birth" name="date-of-birth" placeholder="DD/MM/YY">
+          <label for="street-address">Street address</label>
+          <input type="text" id="street-address" name="street-address" placeholder="Street address" required>
+          <label for="postal-code">Postal code</label>
+          <input type="number" id="postal-code"name="postal-code" placeholder="Postal code" required>
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="City" required>
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" placeholder="Country" required>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+47 10203040">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        </form>
+        <!--Add the required * ??-->
+      </div>
+    </section>
+
+    <section>
+      <div class="checkout-title">
+        <p class="checkout-number">3</p>
+        <h2>Delivery</h2>  
+      </div>
+      <div class="delivery-container">
+        <div>
+          <input type="radio" name="delivery" value="post-office" id="post-office">
+          <label for="post-office">Post-office pick-up</label>
+          <p>free</p>
         </div>
         <div>
-          <div>
-            <p class="bold">Xplorer fleece jacket</p>
-          </div>
-          <div class="cart-info-list">
-            <ul>
-              <li>Fit:</li>
-              <li>Color:</li>
-              <li>Size:</li>
-            </ul>
-            <ul>
-              <li>Unisex</li>
-              <li>Evening green</li>
-              <li>40</li>
-            </ul>  
-          </div>
+          <input type="radio" name="delivery" value="store" id="store">
+          <label for="store">Store pick-up</label>
+          <p>free</p>
         </div>
         <div>
-          <p>Quantity: &#45; 1 &#43;</p> <!--Need the - and + before and after. Html entity? Icons from figma?-->
+          <input type="radio" name="delivery" value="mailbox" id="mailbox">
+          <label for="mailbox">Mailbox delivery</label>
+          <p>nok 29</p>
+        </div>
+        <div>
+          <input type="radio" name="delivery" value="doormat" id="doormat">
+          <label for="doormat">Doormat delivery</label>
+          <p>nok 49</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="checkout-title">
+        <p class="checkout-number">4</p>
+        <h2>Payment</h2>
+      </div>
+      <div class="payment-container">
+        <div>
+          <input type="radio" name="payment" value="visa" id="visa">
+          <label for="visa">
+            <img src="assets/icons/visa.png">
+            Visa
+          </label>
+        </div>
+        <div>
+          <input type="radio" name="payment" value="mastercard" id="mastercard">
+          <label for="mastercard">
+            <img src="assets/icons/mastercard.png">
+            Mastercard
+          </label>
+        </div>
+        <section class="payment-info">
+          <label for="card-number">Card number</label>
+          <input type="number" id="card-number" name="card-number" placeholder="1020 3040 5060 7080" required>
+          <label for="expiration-date">Expiration-date</label>
+          <input type="numnber" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+          <label for="cvc">CVC</label>
+          <input type="number" id="cvc" name="cvc" placeholder="123" required>
+        </section>  
+      </div>
+    </section>
+
+    <section>
+      <div class="checkout-title">
+        <p class="checkout-number">5</p>
+        <h2>Order summary</h2>
+      </div>
+      <div class="checkout-container">
+        <div>
+          <p>1 x Xplorer fleece jacket</p>
+          <p>Subtotal</p>
+          <p>Shipping</p>
+          <p class="bold">Total</p>  
         </div>
         <div>
           <p>NOK 1 499</p>
+          <p>NOK 1 499</p>
+          <p>NOK </p>
+          <p class="bold">NOK 1 499</p>
         </div>
+        <a href="checkout-success.html" class="cta-orange">Checkout now</a>
       </div>
-    </section>
-
-    <div class="shipping-delivery">
-      <section class="shipping-information">
-        <div class="checkout-step">
-          <p class="checkout-number">2</p>
-          <h1>Shipping information</h1>  
-        </div>
-        <div class="shipping-details">
-          <div>
-            <p>First name</p>
-            <input type="text" placeholder="Name">
-            <p>Last name</p>
-            <input type="text" placeholder="Last name">
-            <p>Date of birth</p>
-            <input type="number" placeholder="DD/MM/YYYY">
-            <p>Phone</p>
-            <input type="tel" placeholder="+47 10203040">    
-          </div>
-          <div>
-            <p>Street address</p>
-            <input type="text" placeholder="Rainystreet 1">
-            <div class="input-small">
-              <div>
-                <p>Postal code</p>
-                <input type="number" placeholder="0000">    
-              </div>
-              <div>
-                <p>City</p>
-                <input type="text" placeholder="Oslo">    
-              </div>
-            </div>
-            <p>Country</p>
-            <input type="text" placeholder="Norway">
-            <p>Email</p>
-            <input type="email" placeholder="example@mail.com">    
-          </div>
-        </div>
-      </section>
-  
-      <section class="delivery">
-        <div class="checkout-step">
-          <p class="checkout-number">3</p>
-          <h1>Delivery</h1>  
-        </div>
-        <div class="delivery-method">
-          <div>
-            <p class="bold">Choose delivery method</p>
-          </div>
-          <div class="delivery-method-grid">
-            <div>
-              <form>
-                <div>
-                  <input type="radio" name="delivery-method" value="post-office" id="post-office">
-                  <label for="post-office">Post office pick-up</label>
-                </div>
-                <div>
-                  <input type="radio" name="delivery-method" value="store" id="store">
-                  <label for="store">Store pick-up</label>  
-                </div>
-                <div>
-                  <input type="radio" name="delivery-method" value="package-box" id="package-box">
-                  <label for="post-office">Package box</label>  
-                </div>
-                <div>
-                  <input type="radio" name="delivery-method" value="mailbox" id="mailbox">
-                  <label for="post-office">Mailbox delivery</label>  
-                </div>
-                <div>
-                  <input type="radio" name="delivery-method" value="doormat" id="doormat">
-                  <label for="post-office">Doormat delivery</label>  
-                </div>
-              </form>    
-            </div>
-            <div>
-              <ul>
-                <li>free</li>
-                <li>free</li>
-                <li>nok 29</li>
-                <li>nok 49</li>
-                <li>nok 59</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>  
-    </div>
-
-
-
-    <section class="payment">
-      <div class="checkout-step">
-        <p class="checkout-number">4</p>
-        <h1>Payment</h1>  
-      </div>
-      <p>Payment method</p>
-      <!--The checkboxes or radio butttons for the payment options-->
-      <img src="assets/icons/visa.png">
-      <img src="assets/icons/mastercard.png">
-      <img src="assets/icons/applepay.png">
-      <img src="assets/icons/paypal.png"> <!--The quality on theese icons sucks! Maybe get them from fontawesome linked from web?-->
-      <p>Visa</p>
-      <p>Card number</p>
-      <input type="number" placeholder="1020 3040 5060 7080">
-      <p>Expiration date</p>
-      <input type="number" placeholder="MM/YY">
-      <p>CVC</p>
-      <input type="number" placeholder="123">
-    </section>
-
-    <section class="order-summary">
-      <div class="checkout-step">
-        <p class="checkout-number">5</p>
-        <h1>Order summary</h1>  
-      </div>
-      <p>1 x explorer fleece jacket</p>
-      <p>NOK 1499</p>
-      <p>Subtotal</p>
-      <p>NOK 1499</p>
-      <p>Shipping</p>
-      <p>FREE</p>
-      <p>Total</p>
-      <p>NOK 1499</p>
-      <a href="checkout-success.html" class="cta-blue">checkout now</a>
     </section>
 
   </main>
