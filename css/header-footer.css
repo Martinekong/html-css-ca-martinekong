@@ -1,5 +1,7 @@
 /* HEADER */
 
+/* Have the input like on the course I took, so that it reduces in size */
+
 header {
   background-color: rgb(46, 72, 107);
   position: fixed;
