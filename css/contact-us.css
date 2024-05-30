@@ -116,6 +116,69 @@ h2 {
 
 /* CONTACT FORM */
 
+.contact-form-start h2,
+.contact-form-start p {
+  margin-bottom: 1em;
+}
+
+.contact-form-info,
+.contact-form-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  max-height: 300px;
+}
+
+.contact-form-info input,
+.contact-form-message textarea {
+  padding-left: 0.6em;
+  margin-bottom: 1em;
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+}
+
+.contact-form-info input {
+  height: 2em;
+}
+
+.contact-form-message textarea {
+  height: 236px;
+  font-family: helvetica, arial, sans-serif;
+  padding-top: 0.5em;
+}
+
+.contact-form-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-submit {
+  display: flex;
+}
+
+.contact-form-submit a {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-form-submit {
+    justify-content: center
+  }
+}
+
+/*Desktop styles (example)*/
+@media only screen and (min-width: 701px) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+
+  .contact-form-submit {
+    justify-content: flex-end;
+  }
+}
+
 
 
 
@@ -139,10 +202,6 @@ h2 {
 .faq-contact img {
   width: 100%;
   border-radius: 4px;
-}
-
-.faq-positioning {
-  /*displary flex*/
 }
 
 /*Mobile styles (example)*/

@@ -7,6 +7,7 @@
     <title>Rainydays | Checkout success</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/contact-us.css">
     <link rel="icon" type="image/x-icon" href="#"> <!--the favicon-->
   </head>
 
@@ -81,12 +82,37 @@
     </section> 
 
     <h1>Send us a message</h1>
-    <p>Have a question, comment, or just want to say hello? We'd love to hear from you!</p>
-    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-    <p>Your feedback is important to us and we're here to help with anything you need.</p>
-    <!--The contact form! See prewiesly made on the other CA file!-->
 
-    <button class="cta-blue">SUBMIT</button> <!--Link or button?? Style uppercase in CSS?-->
+    <section class="contact-form-start">
+      <h2>Have a question, comment, or just want to say hello? We'd love to hear from you!</h2>
+      <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+      <p>Your feedback is important to us and we're here to help with anything you need.</p>  
+    </section>
+
+    <form class="contact-form">
+      <section class="contact-form-info">
+        <label for="firstname">First name</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Name" required/>
+        <label for="lastname">Last name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Last name" required/>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required/>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required/>  
+      </section>
+      <section>
+        <div class="contact-form-message">
+          <label for="messsage">Message</label>
+          <textarea id="message" name="message" placeholder="Send us a message..." required></textarea>
+        </div>
+      </section>
+    </form>
+
+    <section class="contact-form-submit">
+      <a href="#" class="cta-blue">submit</a>
+      <!--How do I make an overlay?-->
+    </section>
+
   </main>
 
   <footer>
