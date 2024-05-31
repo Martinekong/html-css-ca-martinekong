@@ -1,0 +1,543 @@
+/* 
+Styling for:
+about-us.html
+checkout.html
+checkout-success.html
+contact-us.html
+contact-form.html
+faq.html
+shop.html
+xplorer-fleece
+*/
+
+main {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 250px;
+}
+
+@media only screen and (min-width: 701px) {
+  main {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 160px;
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+/*on contact-us html, faq.html and contact-form.html its only center on desktop*/
+
+h2 {
+  margin: 0;
+}
+/* Style the h1 and h2 with font-size etc ... */
+
+
+
+/* SHOP */
+
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.shop-container {
+  background-color: rgb(46, 72, 107);
+  color: white;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.shop img {
+  max-width: 300px;
+}
+
+.shop p {
+  padding-top: 0.5em;
+}
+
+
+
+/* XPLORER FLEECE JACKET - PRODUCT SPECIFIC */
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.product-info p {
+  margin-bottom: 1em;
+}
+
+.product-image-container {
+  max-width: 400px;
+}
+
+.product-image {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.product-specific select {
+  border: 1px solid rgb(46, 72, 107);
+  height: 2em;
+}
+
+.product-specific a {
+  margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 700px) {
+
+.product-specific {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 14px;
+}
+  .product-specific select,
+  .product-specific a {
+    width: 100%;
+  }
+
+  .product-image-container {
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .product-specific {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin-top: 14px;
+  }
+
+  .product-info {
+    max-width: 700px;
+    min-width: 200px;
+  }
+
+  .product-image {
+    min-width: 200px;
+  }
+
+  .product-specific select,
+  .product-specific a {
+    width: 40%;
+  }
+}
+
+
+/* CHECKOUT */
+
+/*THIS CAN BE COMPRESSED, especially the containers*/
+
+.checkout-title {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+
+.checkout-number {
+  background-color: rgb(46, 72, 107);
+  color: white;
+  display: inline;
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
+}
+
+.delivery-container,
+.payment-container {
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+} /* add the .checkout-container, .shipping-information-container and the .shopping-cart-container? All containers can be compressed*/
+
+.shopping-cart-container {
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  padding: 1em;
+  display: flex;
+  gap: 2em;
+  justify-content: space-evenly;
+}
+
+.shopping-cart-container img {
+  max-width: 80%;
+}
+
+.shopping-cart-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shopping-cart-description {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.shopping-cart-description p {
+  padding-bottom: 1em;
+}
+
+
+.shipping-information-container form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  padding: 1em 3em;
+}
+
+.shipping-information-container input,
+.payment-info input {
+  margin-top: 0.4em;
+  margin-bottom: 1em;
+  padding-left: 0.5em;
+  height: 2em;
+  border: 1px solid rgb(46, 72, 107);
+  border-radius: 2px;
+  font-size: 1em
+}
+
+.delivery-container div {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delivery-container label {
+  min-width: 132px;
+}
+
+.delivery-container p {
+  min-width: 57px;
+  text-transform: uppercase;
+}
+
+
+.payment-container div {
+  margin-bottom: 1em;
+  display: flex;
+  gap: 2em;
+}
+
+.payment-container label {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.checkout-container {
+  position: relative;
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.checkout-container p {
+  padding-bottom: 2em;
+}
+
+.checkout-container a {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shopping-cart-container,
+.shipping-information-container,
+.delivery-container,
+.payment-container,
+.checkout-container {
+  margin-bottom: 2em;
+}
+
+
+
+/* CHECKOUT SUCCESS */
+
+.checkout-success {
+  display: flex;
+  gap: 1em;
+}
+
+.checkout-success p {
+  margin-bottom: 1em;
+}
+
+.checkmark {
+  border: 6px solid rgb(255, 189, 71);
+  padding: 1em 2em;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 700px) {
+  .checkout-success {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Desktop styles (example)*/
+@media only screen and (min-width: 701px) {
+  .checkout-success {
+    flex-direction: row;
+  }
+}
+
+
+
+/* ABOUT US */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.about-us p {
+  margin-top: 1em;
+}
+
+.about-us img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.about-end-img {
+  margin-bottom: 1em;
+}
+  
+  .about-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .about-end-img {
+    flex: 1;
+  }
+
+  .about-end-text {
+    flex: 1;
+  }
+
+
+
+  /* CONTACT US */
+
+  .contact-head {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-support,
+.contact-connect {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.contact-container {
+  border: 1px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0.3em;
+  margin-top: 2em;
+  gap: 1em;
+  min-height: 315px;
+}
+
+.contact-type {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2em;
+  min-width: 264px;
+}
+
+.contact-icon {
+  max-width: 38px;
+}
+
+.contact-text p {
+  padding-bottom: 1em;
+}
+
+.contact-flex {
+  display: flex;
+}
+
+.contact-connect input {
+  height: 2em;
+  width: 50%;
+  padding-left: 10px;
+  border: 1px solid rgb(46, 72, 107);
+  border-radius: 4px;
+}
+
+.contact-connect button {
+  width: 50%;
+}
+
+/*Mobile styles (example)*/
+@media only screen and (max-width: 700px) {
+  .contact-flex {
+    flex-direction: column;
+  }
+}
+
+/*Desktop styles (example)*/
+@media only screen and (min-width: 701px) {
+  .contact-flex {
+    flex-direction: row;
+    gap: 2em;
+  }
+}
+
+
+
+/* CONTACT FORM */
+
+.contact-form-start h2,
+.contact-form-start p {
+  margin-bottom: 1em;
+}
+
+.contact-form-info,
+.contact-form-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  max-height: 300px;
+}
+
+.contact-form-info input,
+.contact-form-message textarea {
+  padding-left: 0.6em;
+  margin-bottom: 1em;
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+}
+
+.contact-form-info input {
+  height: 2em;
+}
+
+.contact-form-message textarea {
+  height: 236px;
+  font-family: helvetica, arial, sans-serif;
+  padding-top: 0.5em;
+}
+
+.contact-form-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-submit {
+  display: flex;
+}
+
+.contact-form-submit a {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-form-submit {
+    justify-content: center
+  }
+}
+
+/*Desktop styles (example)*/
+@media only screen and (min-width: 701px) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+
+  .contact-form-submit {
+    justify-content: flex-end;
+  }
+}
+
+
+/* FAQ */
+
+.faq summary,
+.faq-contact p {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.faq-container {
+  margin-bottom: 1em;
+}
+
+.faq-contact {
+  display: flex;
+}
+
+.faq-contact img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/*Mobile styles (example)*/
+@media only screen and (max-width: 700px) {
+  .faq-positioning {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-contact {
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 1em;
+  }
+}
+
+/*Desktop styles (example)*/
+@media only screen and (min-width: 701px) {
+  .faq-positioning {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 1em;
+  }
+
+  .faq-contact {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
