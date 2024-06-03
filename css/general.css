@@ -73,11 +73,6 @@ a {
   font-weight: 700;
 }
 
-.underline {
-  text-decoration: underline;
-} /* What is this used on? */
-
-
 
 /* BUTTONS */
 
@@ -85,7 +80,6 @@ a {
   width: 200px;
   height: 40px;
   font-family: Helvetica, arial, sans-serif;
-  font-size: 16px;
   background-color: var(--Rainydays-blue);
   color: var(--text-color-white);
   border: none;
@@ -108,7 +102,7 @@ a {
   width: 300px;
   height: 60px;
   font-family: helvetica, arial, sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   background-color: var(--Rainydays-orange);
   color: black;
   letter-spacing: 3px;
