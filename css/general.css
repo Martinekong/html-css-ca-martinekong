@@ -24,7 +24,6 @@ main {
   margin-top: 230px;
   margin-bottom: 50px;
   font-family: helvetica, arial, sans-serif;
-  /* Cant add margin right left on all because of the banner on the index.html */
 }
 
 a {

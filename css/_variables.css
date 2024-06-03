@@ -1,5 +1,9 @@
 :root {
   --Rainydays-blue: rgb(46, 72, 107);
   --Rainydays-orange: rgb(254, 169, 51);
+
+  --text-color-white: rgb(255, 255, 255);
+
+  --font-family: helvetica, arial, sans-serif;
 }
 /* Need to learn more about variables ... */

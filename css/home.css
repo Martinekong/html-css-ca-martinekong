@@ -2,7 +2,7 @@
   background-image: url(/assets/images/banner-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: var(--text-color-white);
   padding: 150px 0 40px 40px;
   margin: 0 0 40px 0;
   display: flex;
@@ -62,8 +62,8 @@ h2 {
 /* SALE */
 
 .sale {
-  background-color: rgb(46, 72, 107);
-  color: white;
+  background-color: var(--Rainydays-blue);
+  color: var(--text-color-white);
   display: flex;
   flex-direction: column-reverse;
   border-radius: 10px;
@@ -120,8 +120,8 @@ h2 {
 }
 
 .shop-container {
-  background-color: rgb(46, 72, 107);
-  color: white;
+  background-color: var(--Rainydays-blue);
+  color: var(--text-color-white);
   border-radius: 6px;
   font-size: 1rem;
 }
@@ -157,8 +157,8 @@ h2 {
 .activity-container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(46, 72, 107);
-  color: white;
+  background-color: var(--Rainydays-blue);
+  color: var(--text-color-white);
   align-items: center;
   border-radius: 6px;
   min-height: 100px;
