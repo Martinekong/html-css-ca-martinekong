@@ -51,17 +51,16 @@ h2 {
   color: var(--text-color-white);
   padding: 1em;
   border-radius: 4px;
+  max-width: 300px;
 }
 
 .shop img {
-  max-width: 300px;
+ width: 100%;
 }
 
 .shop p {
   padding-top: 0.5em;
 }
-
-
 
 /* XPLORER FLEECE JACKET - PRODUCT SPECIFIC */
 
@@ -210,7 +209,7 @@ h2 {
   height: 2em;
   border: 1px solid var(--Rainydays-blue);
   border-radius: 2px;
-  font-size: 1em
+  font-size: 1em;
 }
 
 
