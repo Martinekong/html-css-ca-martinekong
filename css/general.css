@@ -122,16 +122,8 @@ a {
   cursor: pointer;
 }
 
-/*Mobile styles (example)*/
-@media only screen and (max-width: 700px) {
+/*Mobile styles (template)*/
+@media only screen and (max-width: 700px) {}
 
-}
-
-/*Desktop styles (example)*/
-@media only screen and (min-width: 701px) {
-
-}
-
-/*
-Media queries: the global styles will apply on all screens and then the @media will only apply the changes depending on the screen sizes. 
-*/
+/*Desktop styles (template)*/
+@media only screen and (min-width: 701px) {}

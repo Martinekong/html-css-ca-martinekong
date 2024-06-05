@@ -7,67 +7,61 @@
     <title>Rainydays | Home</title>
     <link rel="stylesheet" href="css/_variables.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/header-footer.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/TEST.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
   </head>
 
   <body>
 
     <header>
-      <div class="header-top">
 
-        <section class="hamburger-menu">
-          <input type="checkbox">
-          <span></span>
-          <span></span>
-          <span></span>
-          <div class="hamburger-menu-links">
-            <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="shop.html">Shop</a></li>
-              <li><a href="about-us.html">About</a></li>
-              <li><a href="contact-us.html">Contact</a></li>
-            </ul>
-          </div>     
-        </section>
+      <section class="header-top">
 
-        <section class="rainydays-logo">
+        <section class="rainydays-logo-desktop">
           <a href="index.html">
             <img src="assets/icons/rainydays-logo-cropped.png" alt="a mountain peak with rainydays written underneath">
           </a>
         </section>
 
-        <section class="desktop-nav">
-          <nav>
+        <section class="hamburger-menu">
+          <input type="checkbox" id="hamburger-checkbox">
+          <label for="hamburger-checkbox"><img src="assets/icons/burger-menu.png" alt="hamburger menu" class="header-icon"></label>
+          <div class="hamburger-menu-links">
             <ul>
-              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="shop.html">Shop</a></li>
               <li><a href="about-us.html">About</a></li>
               <li><a href="contact-us.html">Contact</a></li>
             </ul>
-          </nav>
+          </div>
         </section>
 
-        <section class="search-field-desktop">
-          <input type="text" class="search-field">
-          <img src="assets/icons/search-icon.png" class="search-icon" alt="icon of a magnifying glass">
-        </section>
-
-        <section class="backet-container">
-          <img src="assets/icons/basket-icon-white.png" alt="basket icon for shopping cart" class="basket-icon">
+        <section class="rainydays-logo-mobile">
+          <a href="index.html">
+            <img src="assets/icons/rainydays-logo-cropped.png" alt="a mountain peak with rainydays written underneath">
+          </a>
         </section>  
 
-      </div>
-
-      <div class="header-bottom">
-
-        <section class="search-field-mobile">
-          <input type="text" class="search-field">
-          <img src="assets/icons/search-icon.png" class="search-icon">
+        <section class="header-basket">
+          <a href="checkout.html">
+            <img src="assets/icons/basket-icon-white.png" alt="basket icon to get to checkout" class="header-icon">
+          </a>
         </section>
+  
+      </section>
 
-      </div>
+
+      <section class="header-bottom">
+        <div class="header-search">
+          <input type="text" id="header-search">
+          <label for="header-search"></label>  
+          <div class="search-icon">
+            <img src="assets/icons/search-icon.png" alt="icon of a magnifying glass to search">
+          </div>  
+        </div>
+      </section>
+
     </header>
 
     <main>
@@ -81,8 +75,13 @@
       <!-- Link this section to the shop? -->
       <section class="sale" tabindex="0">
         <div class="sale-info">
+          <div>
             <p class="sale-title">End of season <span class="orange">sale</span></p>
-            <p class="sale-text">Get up to <span class="orange sale-percent">50% off</span></p>
+          </div>
+          <div>
+            <p class="sale-text">Get up to</p>
+            <p class="orange sale-percent">50% off</p>  
+          </div>
         </div>
         <div class="sale-image-container">
           <img src="assets/images/sale-image.jpg" alt="man and woman standing on top of a mountain" class="sale-image">
