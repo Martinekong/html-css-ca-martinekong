@@ -66,6 +66,16 @@ h2 {
   color: white;
   border-radius: 10px;
   display: flex;
+  justify-content: center;
+}
+
+.sale-info,
+.sale-image-container {
+  flex: 1;
+}
+
+.sale-image-container {
+  align-items: center;
 }
 
 .sale-info {
@@ -73,6 +83,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1em;
 }
 
 .sale-title {
@@ -82,23 +93,18 @@ h2 {
 .sale-text {
   font-size: 1.875rem;
   font-weight: 200;
+  display: inline-block;
 }
 
 .sale-percent {
   font-size: 2.6rem;
+  display: inline-block;
 }
 
 .sale-image {
   border-radius: 10px;
   width: 100%;
-  height: 100%;
 }
-
-.sale-image-container {
-  min-height: 109px;
-  min-width: 300px;
-}
-
 
 @media only screen and (max-width: 700px) {
   .sale {
@@ -106,18 +112,22 @@ h2 {
   }
 }
 
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  .sale-title,
+  .sale-title .orange {
+    font-size: 1.3rem;
+  }
+
+  .sale-text,
+  .sale-text .orange {
+    font-size: 1.2rem;
+  }
+}
+
 @media only screen and (min-width: 701px) {
   .sale {
     flex: row;
     align-items: center;
-  }
-
-  .sale-info {
-    flex: 2;
-  }
-
-  .sale-image-container {
-    flex: 1;
   }
 }
 
