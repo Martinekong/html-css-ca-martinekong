@@ -334,7 +334,7 @@ h2 {
   
 .about-end {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   gap: 1em;
 }
@@ -345,6 +345,12 @@ h2 {
 
 .about-end-text {
   flex: 1;
+}
+
+@media only screen and (min-width: 701px) {
+  .about-end {
+    flex-direction: row;
+  }
 }
 
 
