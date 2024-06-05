@@ -47,8 +47,8 @@ h2 {
 }
 
 .shop-container {
-  background-color: var(--Rainydays-blue);
-  color: var(--text-color-white);
+  background-color: rgb(46, 72, 107);
+  color: white;
   padding: 1em;
   border-radius: 4px;
   max-width: 300px;
@@ -84,7 +84,7 @@ h2 {
 }
 
 .product-specific select {
-  border: 1px solid var(--Rainydays-blue);
+  border: 1px solid rgb(46, 72, 107);
   border-radius: 2px;
   height: 2em;
 }
@@ -148,8 +148,8 @@ h2 {
 }
 
 .checkout-number {
-  background-color: var(--Rainydays-blue);
-  color: var(--text-color-white);
+  background-color: rgb(46, 72, 107);
+  color: white;
   display: inline;
   padding: 0.5em 0.8em;
   border-radius: 4px;
@@ -157,7 +157,7 @@ h2 {
 
 .delivery-container,
 .payment-container {
-  border: 2px solid var(--Rainydays-blue);
+  border: 2px solid rgb(46, 72, 107);
   border-radius: 4px;
   padding: 1em;
   display: flex;
@@ -165,7 +165,7 @@ h2 {
 } /* add the .checkout-container, .shipping-information-container and the .shopping-cart-container? All containers can be compressed*/
 
 .shopping-cart-container {
-  border: 2px solid var(--Rainydays-blue);
+  border: 2px solid rgb(46, 72, 107);
   border-radius: 4px;
   padding: 1em;
   display: flex;
@@ -196,7 +196,7 @@ h2 {
 .shipping-information-container form {
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--Rainydays-blue);
+  border: 2px solid rgb(46, 72, 107);
   border-radius: 4px;
   padding: 1em 3em;
 }
@@ -207,7 +207,7 @@ h2 {
   margin-bottom: 1em;
   padding-left: 0.5em;
   height: 2em;
-  border: 1px solid var(--Rainydays-blue);
+  border: 1px solid rgb(46, 72, 107);
   border-radius: 2px;
   font-size: 1em;
 }
@@ -250,7 +250,7 @@ h2 {
 
 .checkout-container {
   position: relative;
-  border: 2px solid var(--Rainydays-blue);
+  border: 2px solid rgb(46, 72, 107);
   border-radius: 4px;
   padding: 2em;
   display: flex;
@@ -291,7 +291,7 @@ h2 {
 }
 
 .checkmark {
-  border: 6px solid var(--Rainydays-orange);
+  border: 6px solid rgb(254, 169, 51);
   padding: 1em 2em;
   border-radius: 4px;
 }
@@ -365,7 +365,7 @@ h2 {
 }
 
 .contact-container {
-  border: 2px solid var(--Rainydays-blue);
+  border: 2px solid rgb(46, 72, 107);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -401,7 +401,7 @@ h2 {
   height: 2em;
   width: 50%;
   padding-left: 10px;
-  border: 1px solid var(--Rainydays-blue);
+  border: 1px solid rgb(46, 72, 107);
   border-radius: 4px;
 }
 
@@ -443,7 +443,7 @@ h2 {
 .contact-form-message textarea {
   padding-left: 0.6em;
   margin-bottom: 1em;
-  border: 2px solid var(--Rainydays-blue);
+  border: 2px solid rgb(46, 72, 107);
   border-radius: 4px;
 }
 
@@ -453,7 +453,7 @@ h2 {
 
 .contact-form-message textarea {
   height: 236px;
-  font-family: var(--font-family-helvetica);
+  font-family: helvetica, arial, sans-serif;
   padding-top: 0.5em;
 }
 
