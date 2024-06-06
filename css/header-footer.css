@@ -1,175 +1,129 @@
 /* HEADER */
 
-/* Have the input like on the course I took, so that it reduces in size */
-
 header {
-  background-color: rgb(46, 72, 107);
+  background-color: var(--Rainydays-blue);
   position: fixed;
   top: 0;
   right: 0;
   left:0;
   z-index: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: helvetica, arial, sans-serif;
+  gap: 0.8em;
 }
 
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
+.header-menu,
+.header-search,
+.header-basket {
+  padding-top: 30px;
 }
 
-.search-field-mobile {
+#hamburger-checkbox {
+  display: none;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 1em;
+}
+
+.header-end {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 2em;
+}
+
+.header-search {
   position: relative;
 }
 
-.search-field-mobile input {
-  width: 100%;
-  height: 26px;
-  border-radius: 6px;
+.header-search label {
+  position: absolute;
+  right: 10px;
+}
+
+.header-search input {
+  width: 270px;
+  height: 24px;
   border: none;
-  margin-top: 10px;
-  padding-left: 10px;
-  font-size: 1em;
+  border-radius: 4px;
+  padding-left: 0.5em;
 }
 
-.search-field-desktop input:focus,
-.search-field-mobile input:focus {
-  outline: none;
-}
-
-.search-field-mobile .search-icon {
+.search-overlay {
+  background-color: rgb(254, 169, 51);
+  border-radius: 4px;
+  padding: 0 10px;
   position: absolute;
-  top: 11px;
-  right: 6px;
+  bottom: -28px;
+  right: 0;
+  left: 0;
+  opacity: 0.3;
 }
 
-/* MOBILE STYLES */
-@media only screen and (max-width: 700px) {
-  
-  header {
-    height: 150px;
-    padding: 40px 40px;
-  }
-
-  .desktop-nav {
-    display: none;
-  }
-
-  .search-field-desktop {
-    display: none;
-  }
-
-  .hamburger-menu [type="checkbox"] {
-  position: absolute;
-  height: 40px;
-  width: 40px;
+.header-menu label:hover {
   cursor: pointer;
-  opacity: 0;
-  }
+}
 
-  .hamburger-menu span {
-    width: 40px;
-    height: 6px;
-    background-color: white;
-    display: grid;
-    border-radius: 2px;
-    margin-bottom: 6px;
-  }
-  
-  .hamburger-menu-links {
+.header-basket img {
+  max-width: 37px;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .header-nav {
     position: absolute;
-    top: 120px;
-    left: -200px;
-    bottom: -4000px;
-    width: 165px;
-    z-index: 2;
+    top: 130px;
+    left: -1000px;
+    bottom: -2000px;
+    display: flex;
+    gap: 4em;
+    padding: 1em 1em 0 2em;
+    flex-direction: column;
     background-color: rgb(46, 72, 107);
-  }
-  
-  .hamburger-menu-links li {
-    display: block;
-    padding-bottom: 20px;
-    margin-top: 60px;
-  }
-  
-  .hamburger-menu-links a {
-    color: white;
-    font-family: helvetica, arial, sans-serif;
-    font-size: 1.3em;
-    text-decoration: none;
+    z-index: 2;
+  }  
+
+  #hamburger-checkbox:checked ~ .header-nav {
+    left: 0;
+    transition: 0.8s;
   }
 
-  .hamburger-menu [type="checkbox"]:checked ~ .hamburger-menu-links {
-    left: 0px;
-    transition: 0.5s;
-    /* How to transition back out smoothly ?? */
+  .header-search {
+    display: none;
   }
 }
 
-/* DESKTOP STYLES */
-@media only screen and (min-width: 701px) {
-  header {
-    height: 120px;
-    padding: 10px 40px 0px 40px;
-    align-items: center;
-  }
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
 
-  .hamburger-menu {
-    display: none;
-  }
-
-  .header-bottom {
-    display: none;
-  }
-
-  .hamburger-menu-links {
-    display: none;
-  }
-
-  .desktop-nav li {
-    display: inline;
-    padding-right: 60px;
-  }
-
-  .desktop-nav a {
-    text-decoration: none;
-    color: white;
-    font-family: helvetica, arial, sans-serif;
-    font-size: 1.3em;
-  }
-
-  .desktop-nav a:hover {
-    cursor: pointer;
-  }
-
-  .search-field-desktop {
-  position: relative;
-  }
-
-  .search-field-desktop input {
-    height: 30px;
-    width: 300px;
-    /* Have the width in % so that it changes? */
-    border: none;
-    border-radius: 6px;
-    font-family: helvetica, arial, sans-serif;
-    font-size: 1em;
-    padding-left: 10px;
-  }
-
-  .search-field-desktop .search-icon {
+  .header-nav {
     position: absolute;
-    top: 4px;
-    right: 2px;
-  }
+    top: 130px;
+    left: -1000px;
+    bottom: -2000px;
+    display: flex;
+    gap: 4em;
+    padding: 1em 1em 0 2em;
+    flex-direction: column;
+    background-color: rgb(46, 72, 107);
+    z-index: 2;
+  }  
 
-  .basket-icon {
-    margin-left: 20px;
+  #hamburger-checkbox:checked ~ .header-nav {
+    left: 0;
+    transition: 0.8s;
   }
-  /* The basket icon is blurry ... */
+}
+
+@media only screen and (min-width: 1001px) {
+  .header-menu label {
+    display: none;
+  }
 }
 
 

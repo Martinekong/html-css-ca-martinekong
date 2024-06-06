@@ -14,14 +14,13 @@ newsletter.html
 main {
   margin-left: 50px;
   margin-right: 50px;
-  margin-top: 250px;
+  margin-top: 160px;
 }
 
 @media only screen and (min-width: 701px) {
   main {
     margin-left: 140px;
     margin-right: 140px;
-    margin-top: 160px;
   }
 }
 
