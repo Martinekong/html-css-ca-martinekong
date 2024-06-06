@@ -578,6 +578,10 @@ h2 {
   .newsletter {
     padding: 10px;
   }
+
+  .newsletter h1 {
+    font-size: 1.18em;
+  }
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
