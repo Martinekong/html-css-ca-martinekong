@@ -1,7 +1,7 @@
 /* HEADER */
 
 header {
-  background-color: var(--Rainydays-blue);
+  background-color: rgb(46, 72, 107);
   position: fixed;
   top: 0;
   right: 0;
