@@ -136,8 +136,6 @@ h2 {
 
 /* CHECKOUT */
 
-/*THIS CAN BE COMPRESSED, especially the containers*/
-
 .checkout-title {
   display: flex;
   align-items: center;
@@ -153,20 +151,32 @@ h2 {
   border-radius: 4px;
 }
 
+.shopping-cart-container,
+.shipping-information-container,
+.delivery-container,
+.payment-container,
+.checkout-container {
+  border: 2px solid rgb(46, 72, 107);
+  border-radius: 4px;
+  padding: 1em 3em;
+  margin-bottom: 2em;
+}
+
+.shopping-cart-container,
+.shipping-information-container form,
+.delivery-container,
+.payment-container,
+.checkout-container {
+  display: flex;
+}
+
+.shipping-information-container form,
 .delivery-container,
 .payment-container {
-  border: 2px solid rgb(46, 72, 107);
-  border-radius: 4px;
-  padding: 1em;
-  display: flex;
   flex-direction: column;
-} /* add the .checkout-container, .shipping-information-container and the .shopping-cart-container? All containers can be compressed*/
+}
 
 .shopping-cart-container {
-  border: 2px solid rgb(46, 72, 107);
-  border-radius: 4px;
-  padding: 1em;
-  display: flex;
   gap: 2em;
   justify-content: space-evenly;
 }
@@ -189,14 +199,6 @@ h2 {
 
 .shopping-cart-description p {
   padding-bottom: 1em;
-}
-
-.shipping-information-container form {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid rgb(46, 72, 107);
-  border-radius: 4px;
-  padding: 1em 3em;
 }
 
 .shipping-information-container input,
@@ -245,10 +247,6 @@ h2 {
 
 .checkout-container {
   position: relative;
-  border: 2px solid rgb(46, 72, 107);
-  border-radius: 4px;
-  padding: 2em;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -263,15 +261,6 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
 }
-
-.shopping-cart-container,
-.shipping-information-container,
-.delivery-container,
-.payment-container,
-.checkout-container {
-  margin-bottom: 2em;
-}
-
 
 
 /* CHECKOUT SUCCESS */
