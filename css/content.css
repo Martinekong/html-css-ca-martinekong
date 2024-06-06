@@ -551,7 +551,7 @@ h2 {
 /* NEWSLETTER */
 
 .newsletter {
-  background-image: url(/assets/images/newsletter.jpg);
+  background-image: url(../assets/images/newsletter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 30px;
