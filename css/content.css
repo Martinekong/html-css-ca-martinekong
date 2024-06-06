@@ -540,6 +540,10 @@ h2 {
   border-radius: 4px;
 }
 
+.faq-container summary:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 700px) {
   .faq-positioning {
     display: flex;
