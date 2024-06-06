@@ -126,6 +126,89 @@ header {
 
 
 
+/*FOOTER*/
 
+.bold {
+  font-weight: bold;
+}
+/*Need this for the headers on the footer. But it is already in another css file. content.css??*/
 
+footer {
+  background-color: rgb(46, 72, 107);
+  color: white;
+  font-family: helvetica, arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  gap: 2em;
+}
 
+.footer-logo img {
+  max-width: 70%;
+}
+
+.our-world nav,
+.social-media {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.our-world nav {
+  flex-direction: column;
+}
+
+.social-media {
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.footer-newsletter-line {
+  display: flex;
+  gap: 0.5em;
+}
+
+.footer-newsletter a {
+  padding: 0.5em 0.8em;
+  background-color: rgb(254, 169, 51);
+  color: black;
+  border-radius: 4px;
+}
+
+.footer-newsletter label {
+  display: none;
+}
+
+.footer-newsletter input {
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  padding-left: 1em;
+}
+
+/*Mobile styles (template)*/
+@media only screen and (max-width: 700px) {
+  .our-world {
+    display: none;
+  }
+
+  .follow-us {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  .our-world {
+    display: none;
+  }
+}
