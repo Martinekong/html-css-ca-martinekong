@@ -11,11 +11,6 @@ header {
   z-index: 1;
 }
 
-.active {
-  text-decoration: underline;
-}
-/*This doesnt work for some reason*/
-
 .header-top {
   display: flex;
   justify-content: space-between;

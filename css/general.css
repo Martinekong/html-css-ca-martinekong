@@ -30,11 +30,19 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 701px) {
   main {
     margin-top: 130px;
     margin-bottom: 50px;
   }
+}
+
+.active {
+  font-weight: bold;
 }
 
 /* BREADCRUMBS */
@@ -61,16 +69,11 @@ a {
 }
 
 
-
 /* SPAN CLASSES */
 
 .orange {
   color: rgb(254, 169, 51);
   text-transform: uppercase;
-}
-
-.bold {
-  font-weight: 700;
 }
 
 

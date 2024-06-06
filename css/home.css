@@ -26,8 +26,8 @@ h2 {
   padding-bottom: 40px;
 }
 
-.title { /* Used for "Shop our latest trends" and "Shop by activity" */
-  font-size: 24px;
+.title {
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -43,11 +43,11 @@ h2 {
 
 @media only screen and (min-width: 701px) {
   h1 {
-    font-size: 35px;
+    font-size: 2.19rem;
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 
   .sale,
