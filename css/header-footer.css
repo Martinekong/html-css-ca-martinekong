@@ -15,9 +15,12 @@ header {
 }
 
 .header-menu,
-.header-search,
-.header-basket {
+.header-search {
   padding-top: 30px;
+}
+
+.header-basket {
+  padding-top: 26px;
 }
 
 #hamburger-checkbox {
