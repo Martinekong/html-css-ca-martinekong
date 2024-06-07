@@ -390,6 +390,10 @@ h2 {
   width: 50%;
 }
 
+.contact-connect label {
+  display: none;
+}
+
 .bold {
   font-weight: bold;
 }
