@@ -40,7 +40,6 @@ h2 {
   font-weight: bold;
 }
 
-
 .sale,
 .shop,
 .activity {
@@ -84,9 +83,7 @@ h2 {
   }
 }
 
-
 /* SALE */
-
 .sale {
   background-color: rgb(46, 72, 107);
   color: white;
@@ -157,10 +154,7 @@ h2 {
   }
 }
 
-
-
 /* SHOP WOMENS AND MENS */
-
 .shop-section {
   display: flex;
   flex-direction: column;
@@ -198,9 +192,7 @@ h2 {
   }
 }
 
-
 /* SHOP BY ACTIVITY */
-
 .activity-section {
   display: grid;
   grid-template-columns: 1fr 1fr;

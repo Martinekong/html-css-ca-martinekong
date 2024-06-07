@@ -35,7 +35,6 @@ h2 {
 
 
 /* SHOP */
-
 .shop {
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +59,6 @@ h2 {
 }
 
 /* XPLORER FLEECE JACKET - PRODUCT SPECIFIC */
-
 .product-info {
   display: flex;
   flex-direction: column;
@@ -91,7 +89,6 @@ h2 {
 }
 
 @media only screen and (max-width: 700px) {
-
 .product-specific {
   display: flex;
   flex-direction: column;
@@ -132,9 +129,7 @@ h2 {
   }
 }
 
-
 /* CHECKOUT */
-
 .checkout-title {
   display: flex;
   align-items: center;
@@ -261,9 +256,7 @@ h2 {
   transform: translateX(-50%);
 }
 
-
 /* CHECKOUT SUCCESS */
-
 .checkout-success {
   display: flex;
   gap: 1em;
@@ -292,10 +285,7 @@ h2 {
   }
 }
 
-
-
 /* ABOUT US */
-
 .about-us {
   display: flex;
   flex-direction: column;
@@ -334,7 +324,6 @@ h2 {
   }
 }
 
-
 @media only screen and (min-width: 701px) {
   .about-end {
     flex-direction: row;
@@ -342,10 +331,7 @@ h2 {
   }
 }
 
-
-
-  /* CONTACT US */
-
+/* CONTACT US */
 .contact-head {
   display: flex;
   flex-direction: column;
@@ -421,10 +407,7 @@ h2 {
   }
 }
 
-
-
 /* CONTACT FORM */
-
 .contact-form {
   position: relative;
 }
@@ -473,7 +456,6 @@ h2 {
   text-transform: uppercase;
 }
 
-
 .submit-overlay {
   position: relative;
   display: flex;
@@ -518,9 +500,7 @@ h2 {
   }
 }
 
-
 /* FAQ */
-
 .faq summary,
 .faq-contact p {
   font-weight: bold;
@@ -570,9 +550,7 @@ h2 {
   }
 }
 
-
 /* NEWSLETTER */
-
 .newsletter {
   background-image: url(../assets/images/newsletter.jpg);
   background-repeat: no-repeat;

@@ -1,5 +1,4 @@
 /* HEADER */
-
 header {
   background-color: rgb(46, 72, 107);
   position: fixed;
@@ -75,7 +74,6 @@ header {
 }
 
 @media only screen and (max-width: 700px) {
-
   .header-nav {
     position: absolute;
     top: 130px;
@@ -100,7 +98,6 @@ header {
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
-
   .header-nav {
     position: absolute;
     top: 130px;
@@ -126,9 +123,7 @@ header {
   }
 }
 
-
 /* FOOTER */
-
 footer {
   background-color: rgb(46, 72, 107);
   color: white;
@@ -138,7 +133,6 @@ footer {
   padding: 1em 2em;
   gap: 2em;
 }
-
 
 .footer-logo img {
   max-width: 80%;
