@@ -66,6 +66,7 @@ header {
   right: 0;
   left: 0;
   opacity: 0.3;
+  cursor:default;
 }
 
 .header-menu label:hover {
